@@ -58,6 +58,16 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
+.special-link:hover {
+  color: #ff5722; /* Changes color on hover */
+  text-decoration: none; /* Removes underline on hover for a change */
+}
+
+.special-link {
+  color: #1a0dab; /* Initial color for the link */
+  text-decoration: underline; /* Ensures it’s clear it’s a link */
+}
+
 .logo {
   font-size: 2rem;
 }
@@ -366,7 +376,7 @@ article .icon {
 
 .project-containers {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
 }
 
 .project-image-containers {
