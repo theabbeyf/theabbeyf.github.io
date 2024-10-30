@@ -345,7 +345,8 @@ section {
 
 .article-container {
   display: flex;
-  text-align: initial;
+  align-items: center;
+  text-align: left;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
@@ -353,11 +354,18 @@ section {
 }
 
 article {
-  display: block;
+  display: flex;
   width: 10rem;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: flex-start;
   gap: 0.5rem;
 }
+
+article .icon {
+  cursor: default;
+}
+
+
 
 article .icon {
   cursor: default;
@@ -369,14 +377,10 @@ article .icon {
   position: relative;
 }
 
-.project-details-container {
-  display: flex;
-  justify-content: center;
-}
 
 .project-containers {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
 }
 
 .project-image-containers {
