@@ -377,6 +377,11 @@ article .icon {
   position: relative;
 }
 
+.project-details-container {
+  display: flex;
+  justify-content: center;
+}
+
 
 .project-containers {
   display: grid;
@@ -464,3 +469,7 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+
+
