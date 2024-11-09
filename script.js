@@ -5,6 +5,11 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
 // Handle opening and closing of modals
 function setupModalHandlers(modalId, btnId, closeClass) {
   const modal = document.getElementById(modalId);
