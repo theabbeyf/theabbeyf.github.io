@@ -68,36 +68,58 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-abbeyf.pdf')"
+            onclick="window.open('./assets/Abegail Fontanilla Resume.pdf')"
             title="Click to download my resume"
             >
             Resume
           </button>
+
 
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
         <div id="socials-container">
-            <img
+          
+          <a
+          href="https://linkedin.com/in/theabbeyf"
+          target="_blank"
+          class="icon-link"
+          title="Visit my LinkedIn profile"
+        >
+          <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="window.open('https://linkedin.com/in/theabbeyf', '_blank')"
-          />          
-          <a href="https://github.com/theabbeyf" target="_blank">
+          />
+        </a>
+
+
+          <a href="https://github.com/theabbeyf" 
+          target="_blank"
+          class="icon-link"
+          title="Visit my Github profile"
+          >
             <img
               src="./assets/github.png"
               alt="My Github profile"
               class="icon"
             />
           </a>
-        <img
-        src="./assets/tableau.png"
-        alt="My LinkedIn profile"
-        class="icon"
-        onclick="window.open('https://public.tableau.com/app/profile/theabbeyf', '_blank')"
-      />   
+
+
+          <a
+          href="https://public.tableau.com/app/profile/theabbeyf"
+          target="_blank"
+          class="icon-link"
+          title="Visit my Tableau profile"
+          >
+          <img
+          src="./assets/tableau.png"
+          alt="My Tableau profile"
+          class="icon"
+          />
+        </a>
         
         </div>
       </div>
@@ -126,6 +148,10 @@
                 <a href="https://coursera.org/share/728ade6e268302e748d7c3320aa87d5c" target="_blank" class="special-link">Google Data Analytics by Google</a>
 
             </p>
+            <p>
+              <a href="https://skillshop.credential.net/c56dccf2-104f-46de-8e89-00febb6a2b4b" target="_blank" class="special-link">Google Analytics</a>
+
+          </p>
             
           </div>
           
@@ -274,10 +300,11 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Excel/Google Sheets</h3>
+                  <h3>Excel</h3>
                   
                 </div>
               </article>
+
               <article>
                 <img
                   src="./assets/checkmark.png"
@@ -296,10 +323,11 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Visual studio code</h3>
+                  <h3>Google Sheets</h3>
                   
                 </div>
               </article>
+            
             </div>
           </div>
         </div>
@@ -317,6 +345,28 @@
   
       <div class="project-details-container">
           <div class="project-containers">
+
+            <div class="details-container color-container">
+              <div class="project-image-container">
+                  <img src="./assets/Google merch store front image.png" alt="Google merch store GA4" class="project-img">
+                  <!-- Trigger/Open The Modal -->
+                  <div id="myModal" class="modal">
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <p>Google Merch Shop Case Study</p>
+                          <button class="btn btn-color-2 project-btn"
+                              onclick="window.open('./assets/Google merch store case study.pdf', '_blank')">
+                              View PDF
+                          </button>
+                          
+                         
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
               <div class="details-container color-container">
                   <div class="project-image-container">
                       <img src="./assets/vg consoles.png" alt="Video games" class="project-img">
@@ -339,6 +389,13 @@
                       </div>
                   </div>
               </div>
+
+            
+
+
+
+
+
               <div class="details-container color-container">
                   <div class="project-image-container">
                       <img src="./assets/1-sql.png" alt="SQL scripts" class="project-img">
