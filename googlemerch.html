@@ -46,6 +46,33 @@
           <ul class="custom-menu">
             <li class="active"><a href="index.html">Home</a></li>
           </ul>
+
+          <button onclick="toggleDarkMode()">
+            <img src="img/security bank logo.png" alt="Image" class="img-fluid">
+          </button>
+          
+          <script>
+            // Function to toggle dark mode
+            function toggleDarkMode() {
+              var element = document.body;
+              element.classList.toggle("dark-mode");
+          
+              // Save preference to localStorage
+              if (element.classList.contains("dark-mode")) {
+                localStorage.setItem("darkMode", "enabled");
+              } else {
+                localStorage.setItem("darkMode", "disabled");
+              }
+            }
+          
+            // Apply dark mode on page load if it was enabled before
+            window.onload = function() {
+              if (localStorage.getItem("darkMode") === "enabled") {
+                document.body.classList.add("dark-mode");
+              }
+            };
+          </script>
+          
         
        
         <div class="col-md-4 d-none d-md-block">
