@@ -45,12 +45,12 @@
         
           <ul class="custom-menu">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href=#portfolio>Recent Projects</a></li>
-            <li><a href="works.html">Portfolio</a></li>
-            <li><a href=#skills>Skills</a></li>
-            <li><a href=#education>Certifications</a></li>
-            <li><a href=#experience>Experience</a></li>
-            <li><a href=#about>About Me</a></li>
+            <li><a href=index.html#recentprojects>Recent Projects</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href=index.html#skills>Skills</a></li>
+            <li><a href=index.html#certifications>Certifications</a></li>
+            <li><a href=index.html#experience>Experience</a></li>
+            <li><a href=index.html#about>About Me</a></li>
             <!--<li><a href=#contact>Contact</a></li>-->
           </ul>
       
@@ -121,15 +121,145 @@
 
     <div class="site-section">
       <div class="container">
-        
+        <h2>
+          Inventory Forecasting Model & Replenishment Template
+        </h2>
+        <p>
+          <strong>
+            Project Background:
+          </strong>
+        </p>
+        <p>
+          This project was created for a children's clothing company. However, since
+          the actual data is confidential, the dataset used here is fictional.
+        </p>
+        <p>
+          After analyzing sales trends and identifying lenient, moderate, and peak
+          months, the objectives of this project were to:
+        </p>
+        <ul>
+          <li>
+            Determine the fast-moving, moderate-moving, and slow-moving dresses for
+            2024 accounting only the discounted price tier and webstore store type.
+          </li>
+          <li>
+            Allocate an inventory forecast for each design using a weighted average
+            metric for January 2025.
+          </li>
+        </ul>
+        <p>
+          <strong>
+            Methodology:
+          </strong>
+        </p>
+        <ul>
+          <li>
+            Created a pivot table filtering for:
+            <ul>
+              <li>
+                <strong>
+                  Department:
+                </strong>
+                Mini Miss
+              </li>
+              <li>
+                <strong>
+                  Store Location:
+                </strong>
+                Webstore
+              </li>
+              <li>
+                <strong>
+                  Pricing Tier:
+                </strong>
+                Discounted
+              </li>
+              <li>
+                <strong>
+                  Subclass Name:
+                </strong>
+                Dresses
+              </li>
+            </ul>
+            The pivot values were set to the sum of quantity sales.
+          </li>
+          <li>
+            Sorted the results in descending order to highlight the top-moving products.
+          </li>
+          <li>
+            Used the 2024 sales history to calculate the average sales for different
+            periods:
+            <ul>
+              <li>
+                Lenient months: January to May
+              </li>
+              <li>
+                Moderate months: June to October
+              </li>
+              <li>
+                Peak months: November to December
+              </li>
+            </ul>
+          </li>
+          <li>
+            Computed the weighted average to forecast January sales using the formula:
+            <br>
+            <strong>
+              Weighted Average = (0.6 × Average during Lenient) + (0.3 × Average during
+              Moderate) + (0.1 × Average during Peak)
+            </strong>
+          </li>
+          <li>
+            As shown, I reduced the weight of peak months to 10% for a more accurate forecast.
+          </li>
+          <li>
+            Classified each design based on its weighted average:
+            <ul>
+              <li>
+                Fast-moving: Weighted average > 10
+              </li>
+              <li>
+                Slow-moving: Weighted average
+                < 4</li>
+                  <li>
+                    Moderate-moving: Everything in between
+                  </li>
+            </ul>
+            </li>
+            <li>
+              Applied a multiplier for the forecast:
+              <ul>
+                <li>
+                  Fast-moving: ×1.2
+                </li>
+                <li>
+                  Moderate-moving: ×1
+                </li>
+                <li>
+                  Slow-moving: ×0.8
+                </li>
+              </ul>
+            </li>
+            <li>
+              Final forecast formula:
+              <strong>
+                Weighted Average × Multiplier
+              </strong>
+            </li>
+        </ul>
+        <p>
+          <a href="https://1drv.ms/x/s!AirSZr7mKLStdf1lRCI5WRX_w9I?e=VgA5XU">
+            Click here to view the Excel workbook online
+          </a>
+        </p>
+        <p>
+          You can access the forecasting template below:
+        </p>
+        <iframe width="1000" height="563" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=ADB428E6BE66D22A%21117&authkey=%21AMoG_MLw1CFtOyY&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True">
+        </iframe>
+      </div>
 
-            <h2>Inventory Forecasting Model & Replenishment Template</h2>
-            <p><strong>Project Background:</strong></p>
-            <p>This is a project that I did for a children's clothing company. But of course, since the data is classified, the data used here is fictional.</p>
-            <p>After knowing the lenient months, moderate and peak months, the objectives are:</p>
-            <list>Identify the fast-moving, moderate moving and slow moving dresses</list>
-            <list>Allocate inventory forecast for each design.</list>
-        </div>
+        
 
   
 
