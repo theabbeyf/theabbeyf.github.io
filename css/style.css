@@ -15,6 +15,12 @@ body {
   background-color: #fff;
 }
 
+.dark-mode {
+  font-family: "Inconsolata", monosapce;
+  color: #ffffff;
+  background-color: #272727;
+}
+
 a {
   color: #777;
 }
@@ -33,19 +39,7 @@ h6,
   font-family: "Raleway", sans-serif;
 }
 
-.dark-mode {
-  font-family: "Inconsolata", monosapce;
-  color: #ffffff;
-  background-color: #000000;
-}
 
-a {
-  color: #777;
-}
-
-.dark-mode {
-  color: #ffffff;
-}
 
 
 
@@ -213,7 +207,7 @@ h6,
 
 .dark-mode .testimonial-wrap {
   padding: 50px 50px 80px 50px;
-  background: #272727;
+  background: #222222;
 }
 
 
@@ -310,7 +304,7 @@ h6,
   display: inline-block;
   width: 7px;
   height: 7px;
-  background-color: #000000;
+  background-color: #272727;
   border-radius: 50%;
   margin: 5px;
 }
@@ -494,12 +488,25 @@ h6,
   color: rgba(255, 255, 255, 0.6);
 }
 
+.dark-mode .custom-navmenu p {
+  color: #272727;
+}
+
+
 .custom-navmenu a {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.dark-mode .custom-navmenu a {
+  color: #272727;
+}
+
 .custom-navmenu a:hover {
   color: #fff;
+}
+
+.dark-mode .custom-navmenu a:hover {
+  color: #272727;
 }
 
 /* Custom Navbar */
@@ -507,6 +514,13 @@ h6,
 .custom-navbar {
   padding-top: 50px;
   width: 100%;
+  background-color: #ffffff;
+}
+
+.dark-mode .custom-navbar {
+  padding-top: 50px;
+  width: 100%;
+  background-color: #272727;
 }
 
 .custom-navbar .navbar-brand {
@@ -542,8 +556,8 @@ h6,
 }
 
 .dark-mode .burger:before,
-.burger span,
-.burger:after {
+.dark-mode .burger span,
+.dark-mode .burger:after {
   width: 100%;
   height: 2px;
   display: block;
@@ -631,7 +645,7 @@ h6,
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #f8f9fa;
+  background: #ffffff;
   position: relative;
   text-align: center;
   color: #0d1e2d;
@@ -642,7 +656,7 @@ h6,
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #000000;
+  background: #272727;
   position: relative;
   text-align: center;
   color: #ffffff;
@@ -663,6 +677,20 @@ h6,
 }
 
 .dark-mode .social a:hover {
+  color: #ffffff;
+}
+
+.sunmoon a {
+  
+  background-color: #ffffff;
+  
+  color: #0d1e2d;
+}
+
+.dark-mode .sunmoon a {
+ 
+  background-color: #272727;
+ 
   color: #ffffff;
 }
 
