@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio - MyPortfolio Bootstrap Template</title>
+  <title>Portfolio Details - MyPortfolio Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -36,7 +36,7 @@
   ======================================================== -->
 </head>
 
-<body class="portfolio-page">
+<body class="portfolio-details-page">
 
   <header id="header" class="header container d-flex justify-content-between align-items-center sticky-top">
     <div class=" container d-flex justify-content-between align-items-center">
@@ -117,148 +117,190 @@
     </div>
   </header>
 
+
   <main class="main">
 
     <!-- Page Title -->
     <div class="page-title">
       <div class="container">
-        <h1>Portfolio</h1>
+        <h1>Inventory Forecasting Model </h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio</li>
+            <li class="current">Portfolio Details</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-     <!-- Portfolio Section -->
-     <section id="recentprojects" class="portfolio section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <div class="row gy-4">
+         
 
-          <div class="row align-items-center">
-            <!-- <div class="col-lg-7 portfolio-info">
-              <h3>Portfolio</h3>
-              <p>View my recent projects</p>
-            </div>-->
-            <div class="text-center">
-              <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-sql">SQL</li>
-                <li data-filter=".filter-excel">Excel</li>
-                <li data-filter=".filter-tableau">Tableau</li>
-                <li data-filter=".filter-openrefine">OpenRefine</li>
-                <li data-filter=".filter-ga4">Google Analytics (GA4)</li>
-                <li data-filter=".filter-dataviz">Data visualization</li>
-                <li data-filter=".filter-datacleaning">Data Cleaning</li>
-                <li data-filter=".filter-dataexp">Data Exploration</li>
-              </ul><!-- End Portfolio Filters -->
+          <div class="col-lg-8">
+           
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <p>
+                <strong>
+                  Project Background:
+                </strong>
+              </p>
+              <p>
+                This project was created for a children's clothing company. However, since
+                the actual data is confidential, the dataset used here is fictional.
+              </p>
+              <p>
+                After analyzing sales trends and identifying lenient, moderate, and peak
+                months, the objectives of this project were to:
+              </p>
+              <ul>
+                <li>
+                  Determine the fast-moving, moderate-moving, and slow-moving dresses for
+                  2024 accounting only the discounted price tier and webstore store type.
+                </li>
+                <li>
+                  Allocate an inventory forecast for each design using a weighted average
+                  metric for January 2025.
+                </li>
+              </ul>
+              <p>
+                <strong>
+                  Methodology:
+                </strong>
+              </p>
+              <ul>
+                <li>
+                  Created a pivot table filtering for:
+                  <ul>
+                    <li>
+                      <strong>
+                        Department:
+                      </strong>
+                      Mini Miss
+                    </li>
+                    <li>
+                      <strong>
+                        Store Location:
+                      </strong>
+                      Webstore
+                    </li>
+                    <li>
+                      <strong>
+                        Pricing Tier:
+                      </strong>
+                      Discounted
+                    </li>
+                    <li>
+                      <strong>
+                        Subclass Name:
+                      </strong>
+                      Dresses
+                    </li>
+                  </ul>
+                  The pivot values were set to the sum of quantity sales.
+                </li>
+                <li>
+                  Sorted the results in descending order to highlight the top-moving products.
+                </li>
+                <li>
+                  Used the 2024 sales history to calculate the average sales for different
+                  periods:
+                  <ul>
+                    <li>
+                      Lenient months: January to May
+                    </li>
+                    <li>
+                      Moderate months: June to October
+                    </li>
+                    <li>
+                      Peak months: November to December
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Computed the weighted average to forecast January sales using the formula:
+                  <br>
+                  <strong>
+                    Weighted Average = (0.6 × Average during Lenient) + (0.3 × Average during
+                    Moderate) + (0.1 × Average during Peak)
+                  </strong>
+                </li>
+                <li>
+                  As shown, I reduced the weight of peak months to 10% for a more accurate forecast.
+                </li>
+                <li>
+                  Classified each design based on its weighted average:
+                  <ul>
+                    <li>
+                      Fast-moving: Weighted average > 10
+                    </li>
+                    <li>
+                      Slow-moving: Weighted average
+                      < 4</li>
+                        <li>
+                          Moderate-moving: Everything in between
+                        </li>
+                  </ul>
+                  </li>
+                  <li>
+                    Applied a multiplier for the forecast:
+                    <ul>
+                      <li>
+                        Fast-moving: ×1.2
+                      </li>
+                      <li>
+                        Moderate-moving: ×1
+                      </li>
+                      <li>
+                        Slow-moving: ×0.8
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Final forecast formula:
+                    <strong>
+                      Weighted Average × Multiplier
+                    </strong>
+                  </li>
+              </ul>
+              <p>
+                <a class="projectlink" href="https://1drv.ms/x/s!AirSZr7mKLStdf1lRCI5WRX_w9I?e=VgA5XU">
+                  Click here to view the Excel workbook online
+                </a>
+              </p>
+              <p>
+                You can access the forecasting template below:
+              </p>
+              <iframe width="1000" height="563" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=ADB428E6BE66D22A%21117&authkey=%21AMoG_MLw1CFtOyY&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True">
+              </iframe>
+            </div>
+           
+          </div>
+          <div class="col-lg-4">
+           
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project overview</h3>
+              <ul>
+                <li><strong>Core Skills:</strong>: Data computation, Forecasting</li>
+                <li><strong>Tools & Technologies</strong>: Excel</li>
+                <li><strong>Project Link</strong>:  <a class="projectlink" href="https://1drv.ms/x/s!AirSZr7mKLStdf1lRCI5WRX_w9I?e=VgA5XU">
+                  Click here
+                </a></li>
+              </ul>
             </div>
           </div>
+       
+      
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200" style="position: relative; height: 1344px;">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-excel" style="position: absolute; left: 0px; top: 0px;">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/inventory forecast.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Inventory Forecasting Model</h4>
-                  <p>Excel</p>
-                  <div>
-                    <a href="assets/img/inventory forecast.png" title="Inventory Forecasting Model" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="inventoryforecasting.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-excel filter-dataviz" style="position: absolute; left: 440px; top: 0px;">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/kiddie vogue dashboard.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Excel Sales Dashboard</h4>
-                  <p>Excel, Data Visualization</p>
-                  <div>
-                    <a href="assets/img/kiddie vogue dashboard.png" title="Exce Dashboard" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="kiddievoguedashboard.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ga4" style="position: absolute; left: 880px; top: 0px;">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/Google merch display.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Google Merch Shop Case Study</h4>
-                  <p>Google Analytics (GA4)</p>
-                  <div>
-                    <a href="assets/img/Google merch display.png" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="googlemerch.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-openrefine" style="position: absolute; left: 0px; top: 336px;">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/game console.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum</p>
-                  <div>
-                    <a href="assets/img/game console.png" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-sql" style="position: absolute; left: 440px; top: 336px;">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/sql display.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum</p>
-                  <div>
-                    <a href="assets/img/sql display.png" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-excel" style="position: absolute; left: 880px; top: 336px;">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/tableau display.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum</p>
-                  <div>
-                    <a href="assets/img/tableau display.png" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-        
         </div>
-
-
 
       </div>
 
-
-
-    </section><!-- /Portfolio Section -->
-
-
-
+    </section><!-- /Portfolio Details Section -->
 
   </main>
 

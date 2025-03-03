@@ -38,50 +38,90 @@
 
 <body class="portfolio-details-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid  position-relative d-flex align-items-center justify-content-between">
+  <header id="header" class="header container d-flex justify-content-between align-items-center sticky-top">
+    <div class=" container d-flex justify-content-between align-items-center">
 
+    
+    
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">MyPortfolio</h1>
+        <h1 class="sitename">AbegailF.</h1>
+
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+   
+ 
+      
+      <div class="container d-flex justify-content-end align-items-center me-4">
+        <!-- Sun-Moon Icon -->
+        <div onclick="toggleDarkMode()">
+          <a href="#"><img src="assets/img/sun moon icon.png" alt="Image" class="img-fluid"></a>
+        </div>
 
+          <script>
+            // Function to toggle dark mode
+            function toggleDarkMode() {
+              var element = document.body;
+              element.classList.toggle("dark-background");
+          
+              // Save preference to localStorage
+              if (element.classList.contains("dark-background")) {
+                localStorage.setItem("darkMode", "enabled");
+              } else {
+                localStorage.setItem("darkMode", "disabled");
+              }
+            }
+          
+            // Apply dark mode on page load if it was enabled before
+            window.onload = function() {
+              if (localStorage.getItem("darkMode") === "enabled") {
+                document.body.classList.add("dark-background");
+              }
+            };
+          </script>  
+           <nav id="navmenu" class="navmenu">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="index.html#recentprojects">Recent Projects</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#certifications">Certifications</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+       <!--        <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Dropdown 1</a></li>
+                  <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                      <li><a href="#">Deep Dropdown 1</a></li>
+                      <li><a href="#">Deep Dropdown 2</a></li>
+                      <li><a href="#">Deep Dropdown 3</a></li>
+                      <li><a href="#">Deep Dropdown 4</a></li>
+                      <li><a href="#">Deep Dropdown 5</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Dropdown 2</a></li>
+                  <li><a href="#">Dropdown 3</a></li>
+                  <li><a href="#">Dropdown 4</a></li>
+                </ul>
+              </li>-->
+              
+            </ul>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          </nav>
+        </div>
+      
+    
     </div>
   </header>
+
 
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title light-background">
+    <div class="page-title">
       <div class="container">
         <h1>Portfolio Details</h1>
         <nav class="breadcrumbs">
@@ -100,7 +140,16 @@
 
         <div class="row gy-4">
 
+       
+
           <div class="col-lg-8">
+           
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
+              <p>
+                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              </p>
+            </div>
             <div class="portfolio-details-slider swiper init-swiper">
 
               <script type="application/json" class="swiper-config">
@@ -139,10 +188,12 @@
 
               </div>
               <div class="swiper-pagination"></div>
+
             </div>
           </div>
 
           <div class="col-lg-4">
+           
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
               <h3>Project information</h3>
               <ul>
@@ -151,12 +202,6 @@
                 <li><strong>Project date</strong>: 01 March, 2020</li>
                 <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
               </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
             </div>
           </div>
 
@@ -168,17 +213,26 @@
 
   </main>
 
-  <footer id="footer" class="footer light-background">
+  <footer id="footer" class="footer">
 
     <div class="container">
       <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">MyPortfolio</strong> <span>All Rights Reserved</span></p>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">AbegailF.</strong> <span>All Rights Reserved</span></p>
       </div>
+    <!-- 
       <div class="social-links d-flex justify-content-center">
         <a href=""><i class="bi bi-twitter-x"></i></a>
         <a href=""><i class="bi bi-facebook"></i></a>
         <a href=""><i class="bi bi-instagram"></i></a>
         <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>  
+    -->
+
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/abegailrf/"><img src="assets/img/linkedin logo v2.png" alt="image" class="img-fluid"></a>
+        <a href="https://github.com/abegailf"><img src="assets/img/git logo v3.png" alt="image" class="img-fluid"></a>
+        <a href="https://public.tableau.com/app/profile/abegailf"><img src="assets/img/tableau logo v3.png" alt="image" class="img-fluid"></a>
+     
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -186,6 +240,10 @@
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+      <div class="credits">
+        <a href="https://www.flaticon.com/free-icons/dark-mode" title="dark mode icons">Dark mode icons created by Freepik - Flaticon</a>
+   
       </div>
     </div>
 
